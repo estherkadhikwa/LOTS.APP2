@@ -1,0 +1,12 @@
+specVersion: "v1"
+serviceId: "lotsapp"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "lotsapp-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
